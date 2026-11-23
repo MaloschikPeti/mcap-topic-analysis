@@ -1,0 +1,72 @@
+/*terminal output*/
+
+ajr@DESKTOP-MOO761J:~$ ros2 topic hz /distance
+average rate: 62.505
+        min: 0.013s max: 0.022s std dev: 0.00140s window: 64
+average rate: 62.479
+        min: 0.013s max: 0.022s std dev: 0.00124s window: 127
+average rate: 62.198
+        min: 0.011s max: 0.030s std dev: 0.00170s window: 190
+^Cajr@DESKTOP-MOO761J:~ros2 topic hz /can_distancece
+average rate: 19.980
+        min: 0.047s max: 0.053s std dev: 0.00123s window: 22
+average rate: 19.972
+        min: 0.047s max: 0.053s std dev: 0.00131s window: 43
+average rate: 19.994
+        min: 0.046s max: 0.054s std dev: 0.00142s window: 64
+^Cajr@DESKTOP-MOO761J:~ros2 topic hz /vehicle_statusus
+average rate: 19.988
+        min: 0.048s max: 0.051s std dev: 0.00066s window: 21
+average rate: 19.995
+        min: 0.048s max: 0.052s std dev: 0.00073s window: 42
+average rate: 19.996
+        min: 0.048s max: 0.052s std dev: 0.00082s window: 62
+^Cajr@DESKTOP-MOO761J:~ros2 topic hz /ouster/pointsts
+average rate: 3.561
+        min: 0.085s max: 0.622s std dev: 0.19046s window: 5
+average rate: 3.171
+        min: 0.084s max: 0.824s std dev: 0.25261s window: 8
+average rate: 3.600
+        min: 0.084s max: 0.824s std dev: 0.20886s window: 13
+^Cajr@DESKTOP-MOO761J:~ros2 topic hz /occupancy_mapap
+average rate: 19.643
+        min: 0.023s max: 0.080s std dev: 0.01609s window: 22
+average rate: 20.044
+        min: 0.023s max: 0.080s std dev: 0.01449s window: 43
+average rate: 20.021
+        min: 0.023s max: 0.080s std dev: 0.01363s window: 63
+^Cajr@DESKTOP-MOO761J:~$
+
+
+
+ajr@DESKTOP-MOO761J:/mnt/c/Users/malos/Downloads$ ros2 topic type /distance
+ros2 topic type /can_distance
+ros2 topic type /vehicle_status
+ros2 topic type /ouster/points
+ros2 topic type /occupancy_map
+std_msgs/msg/Float32
+std_msgs/msg/Float32
+geometry_msgs/msg/Twist
+sensor_msgs/msg/PointCloud2
+nav_msgs/msg/OccupancyGrid
+ajr@DESKTOP-MOO761J:/mnt/c/Users/malos/Downloads$
+
+
+/*summary*/
+
+
+1. /distance
+- Type: std_msgs/msg/Float32
+- Average frequency: 62.20 Hz
+2. /can_distance
+- Type: std_msgs/msg/Float32
+- Average frequency: 19.99 Hz
+3. /vehicle_status
+- Type: geometry_msgs/msg/Twist
+- Average frequency: 20.00 Hz
+4. /ouster/points
+- Type: sensor_msgs/msg/PointCloud2
+- Average frequency: 3.60 Hz
+5. /occupancy_map
+- Type: nav_msgs/msg/OccupancyGrid
+- Average frequency: 20.02 Hz
